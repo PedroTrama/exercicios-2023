@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+  }
+  
+  .header {
+    flex: 1;
+    padding: 20px;
+    width: 1146px;
+    height: 68px;
+    flex-shrink: 0;
+    background: #fdf1eb;
+    color: #725c5c;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .sidebar{
+    padding: 20px;
+  }
+  
+  .title {
+    width: 220px;
+    height: 68px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+  }
