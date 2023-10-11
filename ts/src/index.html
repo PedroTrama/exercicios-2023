@@ -213,9 +213,9 @@
             function createTopic() {
               document.getElementById("discussion").innerHTML = `
                 <p class="doubt">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores</p>
-                <h4 class="addDiscussionHead">Assunto</h4>
-                <input type="text" class="inputText" placeholder="Defina um tópico sucinto para notificar os autores...">
-                <h4 class="addDiscussionHead">Conteúdo</h4>
+                <form class="ops-topic-subject">Assunto</form>
+                <input type="text" class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+                <form class="ops-topic-subject">Conteúdo</form>
                 <textarea class="textArea" rows="5" cols="50"></textarea>
                 <br />
                 <br />
@@ -249,7 +249,7 @@
                 <br />
                 <div class="newTopic">
                   <i class="fa-solid fa-check-double" style="color: #79808b;"></i>
-                  <p class="waiting">Aguardando feedback dos autores</p>
+                  <form class="waiting">Aguardando feedback dos autores</form>
                   <a class="discoverLink">Editar tópico</a>
                 </div>
               `;
@@ -258,9 +258,43 @@
           <br />
           <br />
         </section>
-        <!-- add discussion ends -->
-        <div class="topic">
-          <h3 class="topicH3">Assunto da pergunta aparece aqui</h3>
+        <div class="answered-topic" id="answered-topic">
+          <button onclick="expandComments()" id="expand" class="expand">
+            <h3 class="ops-topic-subject">Assunto da pergunta aparece aqui</h3>
+          </button>
+          <script>
+            function expandComments() {
+              document.getElementById("answered-topic").innerHTML = `
+              <div class="answered-topic">
+                <h3 class="ops-topic-subject">Assunto da pergunta aparece aqui</h3>
+                <br />
+                <p class="userName">Carlos Henrique Santos</p>
+                <br />
+                <p class="question">
+                  Comecinho da pergunta aparece aqui resente relato inscreve-se no
+                  campo da análise da dimensão e impacto de processo formativo situado
+                  impacto de processo formativo processo...
+                </p>
+              <div class="comments-container">
+                <p class="userName">Adriano da Silva</p>
+                <p class="question">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+              </div>
+              <div class="comments-container">
+                <p class="userName">Carlos Henrique Santos</p>
+                <p class="question">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. Obrigada pela resposta, muito interessante o seu trabalho!</p>
+              </div>
+              <div class="comments-container">
+                <p class="userName">Carmila Ferreira Andrade</p>
+                <p class="question">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+              </div>
+              <div class="comments-container">
+                <p class="userName">Ana Carolina</p>
+                <p class="question">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+              </div>
+              `;
+            }
+          </script>
+
           <br />
           <p class="userName">Carlos Henrique Santos</p>
           <br />
@@ -270,22 +304,7 @@
             impacto de processo formativo processo...
           </p>
           <i class="fa-solid fa-ellipsis-vertical" style="color: #fa8c14"> </i>
-          <button class="like">
-            <i class="fa-solid fa-heart" style="color: #ffffff"></i>
-          </button>
-          <p class="interactions">1 like 1 resposta</p>
-        </div>
-        <div class="topic">
-          <h3 class="topicH3">Assunto da pergunta aparece aqui</h3>
-          <br />
-          <p class="userName">Carlos Henrique Santos</p>
-          <br />
-          <p class="question">
-            Comecinho da pergunta aparece aqui resente relato inscreve-se no
-            campo da análise da dimensão e impacto de processo formativo situado
-            impacto de processo formativo processo...
-          </p>
-          <i class="fa-solid fa-ellipsis-vertical" style="color: #fa8c14"></i>
+
           <button class="like">
             <i class="fa-solid fa-heart" style="color: #ffffff"></i>
           </button>

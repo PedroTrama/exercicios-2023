@@ -332,7 +332,7 @@ main {
   padding-left: 2%;
 }
 
-.inputText {
+.subject {
   color: #4d4d4d;
   font-family: Quicksand;
   font-size: 14px;
@@ -386,20 +386,25 @@ main {
   line-height: normal;
 }
 
-.topic {
+.answered-topic {
   padding: 1%;
   border-radius: 3px;
   border: 1px solid #ececec;
   line-height: normal;
 }
 
-.topicH3 {
+.ops-topic-subject {
   color: #ed7839;
   font-family: Quicksand;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   margin-bottom: 0%;
+}
+
+.expand{
+  background: transparent;
+  border: none;
 }
 
 .userName {
