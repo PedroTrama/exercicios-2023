@@ -218,6 +218,7 @@
                 <h4 class="addDiscussionHead">Conteúdo</h4>
                 <textarea class="textArea" rows="5" cols="50"></textarea>
                 <br />
+                <br />
                 <button
                   onclick="sendTopic()"
                   id="btn-create-topic"
@@ -225,15 +226,18 @@
                 >
                   Enviar
                 </button>
+                <br />
+                <br />
               `;
             }
           </script>
           <script>
             function sendTopic() {
               document.getElementById("discussion").innerHTML = `
-              <h4 class="addDiscussionHead">Seu tópico foi enviado com sucesso! :D</h4>
+              <h4 class="sentDiscussion">Seu tópico foi enviado com sucesso! :D</h4>
               <p class="doubt">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for resondido!</p>
               <a class="discoverLink">Descubra outros trabalhos!</a>
+              <br />
               <br />
               <button
                   onclick="createTopic()"
@@ -247,7 +251,6 @@
                   <i class="fa-solid fa-check-double" style="color: #79808b;"></i>
                   <p class="waiting">Aguardando feedback dos autores</p>
                   <a class="discoverLink">Editar tópico</a>
-                  <br />
                 </div>
               `;
             }

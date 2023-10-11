@@ -328,6 +328,8 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: left;
+  padding-left: 2%;
 }
 
 .inputText {
@@ -337,10 +339,23 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 60%;
+  width: 95.5%;
+  border: 1px solid #ececec;
 }
 
 .textArea {
+  border: 1px solid #ececec;
+  width: 60%;
+  width: 95.5%;
+}
+
+.sentDiscussion{
+  color: #ed7839;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .discoverLink {
