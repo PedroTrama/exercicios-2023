@@ -1,5 +1,10 @@
-.container {
-  display: flex;
+.sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 5px 1px #725c5c;
 }
 
 .title {
@@ -10,6 +15,26 @@
   justify-content: center;
   flex-shrink: 0;
   background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+}
+
+.sidebarText {
+  background-color: transparent;
+  text-align: left;
+  width: 220px;
+  color: #725c5c;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: bold;
+  line-height: 30px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border: bottom #725c5c;
+  border-width: 1px;
+}
+
+.sidebarText:hover {
+  background-color: #ffb354;
 }
 
 .h1a {
@@ -25,6 +50,10 @@
 .header {
   display: flex;
   flex: 1;
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+  left: 220px;
   width: 1146px;
   height: 68px;
   flex-shrink: 0;
@@ -79,22 +108,23 @@
   border-radius: 50%;
 }
 
-.sidebarText {
-  background-color: transparent;
-  text-align: left;
-  width: 220px;
-  color: #725c5c;
-  font-family: Quicksand;
-  font-size: 15px;
-  font-style: bold;
-  line-height: 30px;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border: bottom #333;
-  border-width: 1px;
+main{
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  left: 250px;
 }
 
-.sidebarText:hover {
-  background-color:#ffb354
+.mainTitle {
+  color: #ed7839;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+footer{
+  position: fixed;
+  left: 250px;
+  bottom: 0px
 }
