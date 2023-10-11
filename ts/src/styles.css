@@ -405,6 +405,7 @@ main {
 .expand{
   background: transparent;
   border: none;
+  padding-left: 0%;
 }
 
 .userName {
