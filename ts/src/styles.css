@@ -140,7 +140,7 @@ footer {
 .summary {
   width: 52%;
   border-radius: 3px;
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 
 .summaryTitle {
@@ -153,9 +153,9 @@ footer {
   background-color: #fdf1eb;
   margin-top: 0;
   padding-top: 0;
-  height:50px;
+  height: 50px;
   border-radius: 3px;
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 
 .summaryText {
@@ -178,4 +178,64 @@ footer {
   background-color: transparent;
   border: none;
   color: #ed7839;
+}
+
+.discussions {
+  width: 52%;
+  border-radius: 3px;
+  border: 1px solid #ececec;
+}
+
+.discussionsTitle {
+  color: #4e4e4e;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: bold;
+  font-weight: 500;
+  line-height: 17px;
+  background-color: #fdf1eb;
+  margin-top: 0;
+  padding-top: 0;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #ececec;
+}
+
+.discussionsContent {
+  text-align: center;
+}
+
+.discussionsH3 {
+  color: #ed7839;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.discussionsP {
+  color: #595959;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+
+.btn-create-topic {
+  color: #fff;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  width: 133px;
+  height: 32px;
+  border-radius: 5px;
+  border-color: transparent;
+  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24));
 }

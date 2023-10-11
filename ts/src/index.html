@@ -129,7 +129,11 @@
               ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor
               sit amet, consectetur adipiscing elit.</span
             >
-            <button onclick="readMore()" id="btn-show-more" class="btn-show-more">
+            <button
+              onclick="readMore()"
+              id="btn-show-more"
+              class="btn-show-more"
+            >
               ver mais
             </button>
             <script>
@@ -154,8 +158,27 @@
       </div>
 
       <div class="discussions">
-        <p class="discussionTitle"><br />Discussões</p>
-        <section class="discussionContent"></section>
+        <p class="discussionsTitle"><br />Discussões</p>
+        <section class="discussionsContent">
+          <h3 class="discussionsH3">
+            Compartilhe suas ideias ou dúvidas com os autores!
+          </h3>
+          <br />
+          <i
+            class="fa-solid fa-hand-holding-droplet"
+            style="color: #fa8c14"
+          ></i>
+          <i class="fa-regular fa-comments" style="color: #fa8c14"></i>
+          <i class="fa-solid fa-people-arrows" style="color: #fa8c14"></i>
+          <p class="discussionsP">
+            Sabia que o maior estímulo no desenvolvimento científico e cultural
+            é a curiosidade? Deixe seus questionamentos ou sugestões para o
+            autor!
+          </p>
+          <button class="btn-create-topic" id="btn-create-topic">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i> criar tópico
+          </button>
+        </section>
         <div class="topic"></div>
       </div>
     </main>
