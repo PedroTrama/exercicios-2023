@@ -185,7 +185,8 @@
 
       <div class="discussions">
         <p class="discussionsTitle"><br />Discussões</p>
-        <section class="discussionsContent">
+        <!-- add discussion -->
+        <section class="discussionsContent" id="discussion">
           <h3 class="discussionsH3">
             Compartilhe suas ideias ou dúvidas com os autores!
           </h3>
@@ -201,12 +202,60 @@
             é a curiosidade? Deixe seus questionamentos ou sugestões para o
             autor!
           </p>
-          <button class="btn-create-topic" id="btn-create-topic">
+          <button
+            onclick="createTopic()"
+            id="btn-create-topic"
+            class="btn-create-topic"
+          >
             <i class="fa-solid fa-plus" style="color: #ffffff"></i> criar tópico
           </button>
+          <script>
+            function createTopic() {
+              document.getElementById("discussion").innerHTML = `
+                <p class="doubt">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores</p>
+                <h4 class="addDiscussionHead">Assunto</h4>
+                <input type="text" class="inputText" placeholder="Defina um tópico sucinto para notificar os autores...">
+                <h4 class="addDiscussionHead">Conteúdo</h4>
+                <textarea class="textArea" rows="5" cols="50"></textarea>
+                <br />
+                <button
+                  onclick="sendTopic()"
+                  id="btn-create-topic"
+                  class="btn-create-topic"
+                >
+                  Enviar
+                </button>
+              `;
+            }
+          </script>
+          <script>
+            function sendTopic() {
+              document.getElementById("discussion").innerHTML = `
+              <h4 class="addDiscussionHead">Seu tópico foi enviado com sucesso! :D</h4>
+              <p class="doubt">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for resondido!</p>
+              <a class="discoverLink">Descubra outros trabalhos!</a>
+              <br />
+              <button
+                  onclick="createTopic()"
+                  id="btn-create-topic"
+                  class="btn-create-topic"
+                >
+                  novo tópico
+                </button>
+                <br />
+                <div class="newTopic">
+                  <i class="fa-solid fa-check-double" style="color: #79808b;"></i>
+                  <p class="waiting">Aguardando feedback dos autores</p>
+                  <a class="discoverLink">Editar tópico</a>
+                  <br />
+                </div>
+              `;
+            }
+          </script>
           <br />
           <br />
         </section>
+        <!-- add discussion ends -->
         <div class="topic">
           <h3 class="topicH3">Assunto da pergunta aparece aqui</h3>
           <br />
